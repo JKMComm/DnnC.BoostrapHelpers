@@ -1,0 +1,31 @@
+﻿<h3>DnnC Bootstrap Helpers</h3>
+<p class="Contributor">
+	DnnConsulting.nl <br />
+	<a href="mailto:info@dnnconsulting.nl">info@dnnconsulting.nl</a><br />
+	<a href=http://www.DnnConsulting.nl>http://www.DnnConsulting.nl</a><br />
+</p>
+<hr/>
+<div class="License">
+	<h3>About the DnnC Bootstrap Helpers</h3>
+
+	<p class="Owner"><b>Version 1.05.05</b><br /><br /></p>
+	<p>The DnnC Bootstrap Helpers allows you to easily add bootstrap functionality to a bootstrap site without any knowledge of html or jquery.</p>
+	<p>This version includes Tabs, Accordion and the Carousel</p>
+	<p>&nbsp;</p>
+	<p><strong>Extra functionality</strong></p>
+	<p>
+	Added the ability to create a slide for the Carousel and specify if it is visible or not<br/>
+	<em>When upgrading please note that all sliders will appear as "NOT VISIBLE", just edit the sliders and change each slider to visible.</em>
+	</p>
+	<p>&nbsp;</p>
+	<p><strong>Fixed</strong></p>
+	<p>
+	 - Deleting an Accordion Item (Item 1267)
+	 - Deleting a button in the button group
+	</p>
+	<p><hr/></p>
+
+	<p class="Owner"><b>Version 1.05.04</b><br /><br /></p>
+	<p>The DnnC Bootstrap Helpers allows you to easily add bootstrap functionality to a bootstrap site without any knowledge of html or jquery.</p>
+	<p>This version includes Tabs, Accordion and the Carousel</p>	
+</div>

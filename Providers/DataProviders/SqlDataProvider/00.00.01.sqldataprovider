@@ -1,0 +1,45 @@
+﻿/************************************************************/
+/*****              SqlDataProvider                     *****/
+/*****                                                  *****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for {databaseOwner} and {objectQualifier}  *****/
+/*****                                                  *****/
+/************************************************************/
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}DnnC_BootstrapHelpersContent]') AND type in (N'U'))
+DROP TABLE {databaseOwner}[{objectQualifier}DnnC_BootstrapHelpersContent]
+GO
+
+CREATE TABLE {databaseOwner}{objectQualifier}DnnC_BootstrapHelpersContent
+    (
+    ItemId int NOT NULL IDENTITY (1, 1),
+    ModuleId int NOT NULL,
+    HelperType nvarchar(50) NOT NULL,
+    ItemOrder int NOT NULL DEFAULT (0),
+    ItemText1 nvarchar(250) NULL,
+    ItemText2 nvarchar(250) NULL,
+    ItemText3 nvarchar(250) NULL,
+    ItemText4 nvarchar(250) NULL,
+    ItemText5 nvarchar(250) NULL,
+    ItemHtml1 ntext NULL,
+    ItemHtml2 ntext NULL,
+    ItemHtml3 ntext NULL,
+    ItemCheck1 bit NOT NULL DEFAULT (0),
+    ItemCheck2 bit NOT NULL DEFAULT (0),
+    ItemCheck3 bit NOT NULL DEFAULT (0),
+    CreatedByUserId int NOT NULL,
+    CreatedOnDate datetime NOT NULL
+    )  ON [PRIMARY]
+     TEXTIMAGE_ON [PRIMARY]
+GO
+
+ALTER TABLE {databaseOwner}{objectQualifier}DnnC_BootstrapHelpersContent ADD CONSTRAINT
+    PK_{objectQualifier}DnnC_BootstrapHelpersContent PRIMARY KEY CLUSTERED ([ItemId])
+
+GO
+
+/************************************************************/
+/*****              SqlDataProvider                     *****/
+/************************************************************/

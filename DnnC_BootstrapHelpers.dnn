@@ -1,0 +1,99 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="DnnC_BootstrapHelpers" type="Module" version="01.05.05">
+      <friendlyName>DnnC_BootstrapHelpers</friendlyName>
+      <description>DnnConsulting.nl DnnC Bootstrap Helpers module</description>
+      <owner>
+        <name>G Barlow</name>
+        <organization>DnnConsulting.nl</organization>
+        <url>http://www.DnnConsulting.nl</url>
+        <email>info@DnnConsulting.nl</email>
+      </owner>
+      <license src="License.txt"></license>
+      <releaseNotes src="ReleaseNotes.txt"></releaseNotes>
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+        <dependency type="CoreVersion">07.00.02</dependency>
+      </dependencies>      
+      <components>
+        <component type="Script">
+          <scripts>
+            <basePath>DesktopModules\DnnC_BootstrapHelpers</basePath>
+            <script type="Install">
+              <path>Providers\DataProviders\SqlDataProvider</path>
+              <name>01.05.01.SqlDataProvider</name>
+              <version>01.05.01</version>
+            </script>
+            <script type="UnInstall">
+              <path>Providers\DataProviders\SqlDataProvider</path>
+              <name>Uninstall.SqlDataProvider</name>
+              <version>01.05.01</version>
+            </script>
+          </scripts>
+        </component>
+        <component type="Module">
+          <desktopModule>
+            <moduleName>DnnC_BootstrapHelpers</moduleName>
+            <foldername>DnnC_BootstrapHelpers</foldername>
+            <supportedFeatures />
+            <moduleDefinitions>
+              <moduleDefinition>
+                <friendlyName>DnnC_BootstrapHelpers</friendlyName>
+                <defaultCacheTime>0</defaultCacheTime>
+                <moduleControls>
+                  <moduleControl>
+                    <controlKey />
+                    <controlSrc>DesktopModules/DnnC_BootstrapHelpers/Helpers.ascx</controlSrc>
+                    <supportsPartialRendering>False</supportsPartialRendering>
+                    <controlTitle />
+                    <controlType>View</controlType>
+                    <iconFile />
+                    <helpUrl />
+                    <viewOrder>0</viewOrder>
+                  </moduleControl>
+                  <moduleControl>
+                    <controlKey>Edit</controlKey>
+                    <controlSrc>DesktopModules/DnnC_BootstrapHelpers/Edit.ascx</controlSrc>
+                    <supportsPartialRendering>False</supportsPartialRendering>
+                    <controlTitle>Edit Content</controlTitle>
+                    <controlType>Edit</controlType>
+                    <iconFile />
+                    <helpUrl />
+                    <viewOrder>0</viewOrder>
+                    <supportsPopUps>True</supportsPopUps>
+                  </moduleControl>
+                  <moduleControl>
+                    <controlKey>Settings</controlKey>
+                    <controlSrc>DesktopModules/DnnC_BootstrapHelpers/Settings.ascx</controlSrc>
+                    <supportsPartialRendering>False</supportsPartialRendering>
+                    <controlTitle>DnnC_BootstrapHelpers Settings</controlTitle>
+                    <controlType>Edit</controlType>
+                    <iconFile />
+                    <helpUrl />
+                    <viewOrder>0</viewOrder>
+                  </moduleControl>
+                </moduleControls>
+              </moduleDefinition>
+            </moduleDefinitions>
+          </desktopModule>
+        </component>
+        <component type="Assembly">
+          <assemblies>
+            <assembly>
+              <name>DnnC.Modules.BootstrapHelpers.dll</name>
+              <path>bin</path>
+            </assembly>
+          </assemblies>
+        </component>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>DesktopModules/DnnC_BootstrapHelpers</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>

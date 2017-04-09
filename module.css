@@ -1,0 +1,119 @@
+
+
+/******* Tabs *******/    
+.dnnForm .ui-tabs               { position: relative; padding: .2em; zoom: 1; } 
+.dnnForm .ui-tabs .ui-tabs-nav  { margin: 0; padding: .2em .2em 0; }
+.dnnForm .ui-tabs .ui-tabs-nav li,
+ul.dnnAdminTabNav li {
+    list-style: none;
+    float: left;
+    position: relative;
+    top: 1px;
+    margin: 0 .2em 1px 0;
+    border-bottom: 0 !important;
+    padding: 0;
+    white-space: nowrap;
+}
+.dnnForm .ui-tabs .ui-tabs-nav li a,
+ul.dnnAdminTabNav li a {
+    float: left;
+    padding: .5em 1em;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin: 0;
+    letter-spacing: -0.03em;
+    background: #818181;
+    background: -moz-linear-gradient(top, #818181 0%, #656565 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#818181), color-stop(100%,#656565));
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#818181', endColorstr='#656565',GradientType=0 );
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    -moz-border-radius-bottomright: 0px;
+    -moz-border-radius-bottomleft: 0px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    text-shadow: 0px 1px 1px #000;
+}
+.dnnForm .ui-tabs .ui-tabs-nav li.ui-tabs-selected {
+    margin-bottom: 0;
+    padding-bottom: 1px;
+}
+.dnnForm .ui-tabs .ui-tabs-nav li.ui-tabs-selected a,
+.dnnForm .ui-tabs .ui-tabs-nav li.ui-state-disabled a,
+.dnnForm .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text }
+.dnnForm .ui-tabs .ui-tabs-nav li a,
+.dnnForm .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.dnnForm .ui-tabs .ui-tabs-panel {
+    display: block;
+    border-width: 0;
+    padding: 1em 1.4em;
+    background: none;
+}
+.dnnForm .ui-tabs-panel { position: relative }
+.dnnForm .ui-tabs-hide { display: none !important }   
+
+ul.dnnAdminTabNav li.ui-tabs-active a {
+margin-top: -3px;
+padding: 12px 9px 10px 9px;
+background: #fff;
+color: #999999;
+}
+/******* Tabs *******/  
+
+
+
+
+/* begin  flip 1  */
+.flip {
+  -webkit-perspective: 800;-ms-perspective: 800;-moz-perspective: 800;-o-perspective: 800;position: relative;}
+
+.flip .card.flipped-lr {transform:rotateY(180deg);-ms-transform:rotateY(180deg);-moz-transform:rotateY(180deg);-webkit-transform:rotateY(180deg);-o-transform:rotateY(180deg);}
+.flip .card.flipped-rl {transform:rotateY(-180deg);-ms-transform:rotateY(-180deg);-moz-transform:rotateY(-180deg);-webkit-transform:rotateY(-180deg);-o-transform:rotateY(-180deg);}
+
+.flip .card.flipped-bt {transform:rotateX(180deg);-ms-transform:rotateX(180deg);-moz-transform:rotateX(180deg);-webkit-transform:rotateX(180deg);-o-transform:rotateX(180deg);}
+.flip .card.flipped-tb {transform:rotateX(-180deg);-ms-transform:rotateX(-180deg);-moz-transform:rotateX(-180deg);-webkit-transform:rotateX(-180deg);-o-transform:rotateX(-180deg); }
+
+.flip .card {
+    padding:10px;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+  -moz-transform-style: preserve-3d;
+  -moz-transition: 0.5s;
+  -ms-transform-style: preserve-3d;
+  -ms-transition: 0.5s;
+  -o-transform-style: preserve-3d;
+  -o-transition: 0.5s;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+}
+.flip .card .face {
+  position: absolute;
+  z-index: 2;
+  /*text-align: center;*/  
+  backface-visibility: hidden;  
+  -webkit-backface-visibility: hidden; 
+  -moz-backface-visibility: hidden; 
+  -ms-backface-visibility: hidden; 
+  -o-backface-visibility: hidden; 
+
+}
+.flip .card .front {
+  position: absolute;
+  z-index: 1;
+  /*background: black;
+  color: white;*/
+  cursor: pointer;
+}
+.flip .card .back-lr {cursor: pointer;transform:rotateY(180deg);-ms-transform:rotateY(180deg);-moz-transform:rotateY(180deg);-webkit-transform:rotateY(180deg);-o-transform:rotateY(180deg);}
+.flip .card .back-rl {cursor: pointer;transform:rotateY(-180deg);-ms-transform:rotateY(-180deg);-moz-transform:rotateY(-180deg);-webkit-transform:rotateY(-180deg);-o-transform:rotateY(-180deg);}
+
+.flip .card .back-bt {cursor: pointer;transform:rotateX(180deg);-ms-transform:rotateX(180deg);-moz-transform:rotateX(180deg);-webkit-transform:rotateX(180deg);-o-transform:rotateX(180deg);}
+.flip .card .back-tb {cursor: pointer;transform:rotateX(-180deg);-ms-transform:rotateX(-180deg);-moz-transform:rotateX(-180deg);-webkit-transform:rotateX(-180deg);-o-transform:rotateX(-180deg);}
+/* end  flip 1 */
+
+			
